@@ -86,7 +86,7 @@ class RecintosZoo {
       }
 
       return `Recinto ${recinto.number} (espaço livre: ${tamanhoDisp} total: ${recinto.tamanhoTotal})`;
-    }).filter(Boolean);
+    })
 
     return { recintosViaveis: resultRecintos };
   }
@@ -94,5 +94,4 @@ class RecintosZoo {
 
 export { RecintosZoo as RecintosZoo };
 
-console.log(new RecintosZoo().analisaRecintos("LEAO", 2));
 
